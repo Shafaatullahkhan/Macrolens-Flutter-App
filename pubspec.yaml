@@ -1,0 +1,57 @@
+name: macrolens_flutter_app
+description: AI-powered food scanner and nutrition tracking app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Camera & Image
+  camera: ^0.11.0+2
+  image_picker: ^1.1.2
+  mobile_scanner: ^5.2.3         # Barcode scanning
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # State Management
+  provider: ^6.1.2
+
+  # UI & Animation
+  flutter_animate: ^4.5.0
+  google_fonts: ^6.2.1
+  fl_chart: ^0.69.0
+  percent_indicator: ^4.2.3
+
+  # Utilities
+  shared_preferences: ^2.2.3
+  intl: ^0.19.0
+  uuid: ^4.4.2
+  path_provider: ^2.1.4
+
+  # HTTP (for Open Food Facts API)
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.12
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/lottie/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
